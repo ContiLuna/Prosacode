@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleCv.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3d8e54b488.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../Assets/images/logo.png">
+    <title>Prosacode</title>
+</head>
+    <body>
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light h5">
+              <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html"><img src="../Assets/images/Logo Horizontal.png" width="200"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="col navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./sillas.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./donar.html">Donar</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./contactos.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./usuario.html"><i class="fa-solid fa-circle-user"></i></a>
+                        </li>
+                        <li class="dropdown">
+                          <a class="nav-link active dropdown-toggle" aria-current="page" href="#" data-bs-toggle="dropdown"></a>
+                          <ul class="dropdown-menu dropdown-menu-end px-2 bg-light" aria-labelledby="navbarDropdown">
+                            <li>
+                              <button class="dropdown-item" type="button">
+                                <a class="menu-link active text-decoration-none" href="./ingresar.html">Ingresar</a>
+                              </button>
+                            </li>
+                            <li><hr class="dropdown-divider text-light"></li>
+                            <li>
+                              <button class="dropdown-item" type="button">
+                                <a class="menu-link active text-decoration-none" href="./registrarse.html">Registrarse</a>
+                              </button>
+                            </li>
+                            <li><hr class="dropdown-divider text-light"></li>
+                            <li>
+                              <button class="dropdown-item" type="button">
+                                <a class="menu-link active text-decoration-none" href="./error.html">Cerrar sesion</a>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+          </nav>
+        </header>
+        <main>
+          <div class="container mx-auto form_cv_container row pt-3">
+              <div class="formulario m-3">
+                  <h4 class="text-center p-5"><strong>¡TRABAJA CON NOSOTROS!</strong></h4>
+                  <form class="mx-5" action="../index.html">
+                      <div class="row">
+                          <label for="name"><strong>Nombres y Apellidos</strong></label>
+                          <input id="name" type="text" class="form-control mb-3 d-block" minlength="8" maxlength="60" autofocus required>
+                          <label for="tel"><strong>Teléfono</strong></label>
+                          <input id="tel" type="tel" class="form-control mb-3" minlength="8" maxlength="15" required>
+                          <label for="domicilio"><strong>Domicilio</strong></label>
+                          <input id="domicilio" type="text" class="form-control mb-3 d-block" minlength="8" maxlength="60" required>
+                          <div class="row">                             
+                              <div class="col-xs-12 col-md-6 col-lg-4">
+                                  <label for="localidad"><strong>Localidad</strong></label>
+                                  <input id="localidad" type="text" class="form-control mb-3 d-block" minlength="8" maxlength="20" required>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-4">
+                                  <label for="provincia"><strong>Provincia</strong></label>
+                                  <input id="provincia" type="text" class="form-control mb-3 d-block" minlength="8" maxlength="20" required>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-4">
+                                  <label for="cp"><strong>Codigo Postal</strong></label>
+                                  <input id="cp" type="number" class="form-control mb-3 d-block" minlength="4" maxlength="4" required>
+                              </div>
+                          </div>
+                          <label for="email"><strong>Correo electrónico</strong></label>
+                          <input id="email" type="email" class="form-control mb-3" minlength="8" maxlength="45" required>
+                          <label for="titulo"><strong>Titulo</strong></label>
+                          <input id="titulo" type="text" class="form-control mb-3 d-block" maxlength="50">
+                          <label class="my-2" for="experoencia"><strong>Experiencia Laboral</strong></label>
+                          <textarea class="form-control" id="experiencia" rows="3"></textarea>
+                          <label for="archivo" class="mt-4 mb-2"><strong>Adjuntar C.V.</strong></label>
+                          <input type="file" class="form-control-file" id="archivo">
+                          <div class="text-center m-4">
+                              <button type="submit" class="btn btn-primary">ENVIAR</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </main>
+        <!-- Footer -->
+        <div class="footer container-fluid mt-3">
+          <div class="row pt-3 bg-dark">
+                <div class="col-xs-12 col-md-6 col-lg-3 text-center">
+                  <a href="../index.html"><img class="logofooter" src="../Assets/images/imagotipo.png" width="140"></a>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 px-3">
+                  <p><a class="a text-decoration-none text-secondary" href="../index.html">Quiénes somos</a></p>  
+                  <p><a class="a text-decoration-none text-secondary" href="../html/sucursales.html">Sucursales</a></p>  
+                  <p><a class="a text-decoration-none text-secondary" href="../html/asesoramiento.html">Asesoramiento</a></p>  
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 px-3 text-white">
+                  <p><a class="a text-decoration-none text-secondary" href="../html/terminos.html">Términos y condiciones</a></p>  
+                  <p><a class="a text-decoration-none text-secondary" href="../html/noticias.html">Noticias</a></p>  
+                  <p><a class="a text-decoration-none text-secondary" href="#">¿Querés trabajar en Prosacode?</a></p> 
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 px-3 text-white">
+                  <p class="text-secondary"><b>¡Contáctanos!</b></p>
+                  <a class="redes text-decoration-none text-secondary me-2" href="https://www.facebook.com/prosacode" target="_blank"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+                  <a class="redes text-decoration-none text-secondary me-2" href="https://instagram.com/prosacode" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                  <a class="redes text-decoration-none text-secondary me-2" href="mailto:prosacode@gmail.com" target="_blank"><i class="fa-solid fa-at fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="row bg-dark">
+              <div class="col-12 text-secondary text-center position-relative">
+                <p class="mx-5 px-5">Copyright 2022 &#169 PROSACODE - Diseño de página web de 
+                <span><a class="a text-decoration-none text-secondary" href="./desarrolladores.html">Bonobo group</a></span> 
+                </p>
+                <a class="up position-absolute px-3 text-decoration-none text-secondary" href="#"><i class="fa-solid fa-angles-up fa-lg"></i></a>
+              </div>
+              <div class="col-12 barra"></div>
+          </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+      </script>
+</body>
+</html>

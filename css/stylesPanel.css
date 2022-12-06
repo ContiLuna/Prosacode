@@ -1,0 +1,173 @@
+body::-webkit-scrollbar {
+    width: 12px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(127, 212, 191, .5);        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(112, 198, 255);    
+    border-radius: 20px;       
+    border: 3px solid rgb(109, 175, 201);  
+  }
+
+.navbar{
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(182,245,255,1) 50%, rgba(167,255,189,1) 83%);
+    box-shadow: 0 0 20px black;
+    color: #454545;
+}
+
+.navbar-brand:hover{
+    transform: scale(.98);
+    transition: transform .2s;
+}
+
+.nav-item{
+    color: #454545;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.nav-item::after{
+    content: "";
+    display: block;
+    background-color: #454545;
+    width: 70%;
+    height: 3px;
+    margin-left: 8px;
+    margin-top: 1px;
+    clip-path: var(--clippy);
+    transition: clip-path .5s;
+}
+
+.nav-item:hover{
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.dropdown-item:hover{
+    background: rgba(123,228,149,1) !important;
+    box-shadow: 0 2px 2px 3px rgba(141, 141, 141, 0.3);
+}
+
+.menu-link{
+    color: #454545;
+    font-weight: bold;
+}
+
+.menu-link:hover{
+    color: #454545;
+    font-weight: bold;
+}
+
+
+main{
+    padding-top: 100px;
+    min-height: 80vh;
+}
+
+.fondo{
+    z-index: -1;
+    width: 100vh;
+}
+
+.formulario{
+    background-color: hsla(145, 100%, 65%, 0.39);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .7);
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="text"]:hover,
+input[type="password"]:focus,
+input[type="password"]:hover,
+input[type="email"]:focus,
+input[type="email"]:hover,
+input[type="date"]:focus,
+input[type="date"]:hover,
+input[type="number"]:focus,
+input[type="number"]:hover,
+input[type="tel"]:focus,
+input[type="tel"]:hover,
+input[type="checkbox"]:focus,
+
+.uneditable-input:focus {   
+  border-color: rgba(126, 239, 104, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+}
+
+input[type="checkbox"]:checked{
+    background-color: #0fc27a;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus{
+  -webkit-box-shadow: none !important;
+  box-shadow: none  !important;
+}
+
+.btn-primary{
+    background: #10ca7f !important;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, .5);
+    border: none !important;
+    box-shadow: 0px 8px 10px -8px rgb(0, 0, 0, .7);
+}
+
+.btn-primary:hover{
+    background: #0fc27a !important;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, .5);
+    border: none !important;
+}
+
+.btn-primary:active{
+    background: #0fc27a !important;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, .5);
+}
+
+.btn-secondary{
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, .5);
+    box-shadow: 0px 8px 10px -8px rgb(0, 0, 0, .7);
+}
+
+.btn-secondary:active{
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, .5);
+}
+
+.pass{
+    cursor: pointer;
+}
+
+.logofooter:hover{
+    transform: scale(.98);
+    transition: transform .2s;
+}
+
+.a:hover{
+    font-weight: bold;
+    color: rgba(123,228,149,1) !important;
+}
+
+.redes:hover{
+    color: rgba(123,228,149,1) !important;
+}
+
+.up{
+    right: 0%;
+    bottom: 15px;
+}
+
+.up:hover{
+    bottom: 14px;
+    color: rgba(123,228,149,1) !important;
+}
+
+.barra{
+    height: 10px;
+    background: linear-gradient(90deg, rgba(123,228,149,1) 47%, rgba(99,188,201,1) 100%);
+}

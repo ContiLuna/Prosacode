@@ -1,0 +1,149 @@
+body::-webkit-scrollbar {
+    width: 12px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(127, 212, 191, .5);        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(112, 198, 255);    
+    border-radius: 20px;       
+    border: 3px solid rgb(109, 175, 201);  
+  }
+  
+.navbar{
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(182,245,255,1) 50%, rgba(167,255,189,1) 83%);
+    box-shadow: 0 0 20px black;
+    color: #454545;
+}
+
+.navbar-brand:hover{
+    transform: scale(.98);
+    transition: transform .2s;
+}
+
+.nav-item{
+    color: #454545;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.nav-item::after{
+    content: "";
+    display: block;
+    background-color: #454545;
+    width: 70%;
+    height: 3px;
+    margin-left: 8px;
+    margin-top: 1px;
+    clip-path: var(--clippy);
+    transition: clip-path .5s;
+}
+
+.nav-item:hover{
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.dropdown-item:hover{
+    background: rgba(123,228,149,1) !important;
+    box-shadow: 0 2px 2px 3px rgba(141, 141, 141, 0.3);
+}
+
+.menu-link{
+    color: #454545;
+    font-weight: bold;
+}
+
+.menu-link:hover{
+    color: #454545;
+    font-weight: bold;
+}
+
+main{
+    margin-top: 85px;
+    min-width: 95vw;
+    min-height: 80vh;
+    background: radial-gradient(circle, rgba(92,92,92,1) 0%, rgba(36,36,36,1) 100%);
+}
+
+.monito{
+    border-radius: 40% 0;
+}
+
+.uno{
+    clip-path: circle(20% at 0 0); 
+    top: 0;
+    left: 0;
+    background: linear-gradient(315deg, rgba(255,136,0,1) 26%, rgba(255,27,27,1) 100%);
+    box-shadow: 0 0 10px rgb(0, 0, 0, .5);
+
+}
+
+.uno:hover{
+   clip-path: circle(141.1% at 100% 100%); 
+   transition: clip-path .7s;
+}
+
+.dos{
+    clip-path: circle(20% at 100% 0); 
+    top: 0;
+    right: 0;
+    background: linear-gradient(45deg, rgba(255,136,0,1) 26%, rgba(255,27,27,1) 100%);
+    box-shadow: 0 0 10px rgb(0, 0, 0, .5);
+}
+
+.dos:hover{
+   clip-path: circle(141.1% at 0 100%); 
+   transition: clip-path .7s;
+}
+
+.foto:hover:hover{
+    transform: scale(1.05);
+    transition: transform 1s;
+}
+
+.redesCard{
+    font-size: 200%;
+    color: #ffb0b0 !important;
+    transition: color .4s;
+}
+
+.redesCard:hover{
+    font-size: 190%;
+    color: #e7e7e7 !important;
+    transition: color .4s;
+}
+
+/* .rounded-circle{
+    border: 5px solid rgb(100, 0, 25)  ;
+} */
+
+.logofooter:hover{
+    transform: scale(.98);
+    transition: transform .2s;
+}
+
+.a:hover{
+    font-weight: bold;
+    color: rgba(123,228,149,1) !important;
+}
+
+.redes:hover{
+    color: rgba(123,228,149,1) !important;
+}
+
+.up{
+    right: 0%;
+    bottom: 15px;
+}
+
+.up:hover{
+    bottom: 14px;
+    color: rgba(123,228,149,1) !important;
+}
+
+.barra{
+    height: 10px;
+    background: linear-gradient(90deg, rgba(123,228,149,1) 47%, rgba(99,188,201,1) 100%);
+}

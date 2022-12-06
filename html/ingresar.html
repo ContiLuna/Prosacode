@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleIngresar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3d8e54b488.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../Assets/images/logo.png">
+    <title>Prosacode</title>
+</head>
+    <body>
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light h5">
+              <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html"><img src="../Assets/images/LogoUsuario.png" width="200"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="col navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./sillas.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./donar.html">Donar</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./contactos.html">Contacto</a>
+                        </li>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./usuario.html"><i class="fa-solid fa-circle-user"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a class="nav-link active dropdown-toggle" aria-current="page" href="#" data-bs-toggle="dropdown"></a>
+                        <ul class="dropdown-menu dropdown-menu-end px-2 bg-light" aria-labelledby="navbarDropdown">
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              <a class="menu-link active text-decoration-none" href="./ingresar.html">Ingresar</a>
+                            </button>
+                          </li>
+                          <li><hr class="dropdown-divider text-light"></li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              <a class="menu-link active text-decoration-none" href="./registrarse.html">Registrarse</a>
+                            </button>
+                          </li>
+                          <li><hr class="dropdown-divider text-light"></li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              <a class="menu-link active text-decoration-none" href="./error.html">Cerrar sesion</a>
+                            </button>
+                          </li>
+                        </ul>
+                      </li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+          </nav>
+        </header>
+        <main>
+
+          <!-- Código script para mostrar/ocultar contraseña -->
+          <script type="text/javascript">
+            function mostrarPassword(){
+                var cambio = document.getElementById("txtPassword");
+                if(cambio.type == "password"){
+                  cambio.type = "text";
+                  $('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
+                }else{
+                  cambio.type = "password";
+                  $('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
+                }
+            }
+            function mostrarPassword2(){
+                var cambio = document.getElementById("txtPassword2");
+                if(cambio.type == "password"){
+                  cambio.type = "text";
+                  $('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
+                }else{
+                  cambio.type = "password";
+                  $('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
+                }
+            }
+            function mostrarPassword3(){
+                var cambio = document.getElementById("txtPassword3");
+                if(cambio.type == "password"){
+                  cambio.type = "text";
+                  $('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
+                }else{
+                  cambio.type = "password";
+                  $('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
+                }
+            }
+          </script>
+
+          <!-- Cuerpo -->
+          <img class="fondo position-absolute" src="../Assets/images/logo color.png" alt="">
+          <div class="container mx-auto row pt-3 mt-5">
+            <div class="col-xs-1 col-md-2 col-lg-3"></div>
+            <div class="formulario col-xs-10 col-md-8 col-lg-6 pb-3">
+              <h4 class="text-center pt-4">INGRESAR</h4>
+              <!-- Modal ingreso con fb -->
+              <div class="d-flex justify-content-end mx-5 my-2">
+                <a class="redesIngreso" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class=" fa-brands fa-facebook-square fa-2x ps-3"></i></a>
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Ingrese su cuenta de facebook</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body my-2">
+                            <form class="mx-5" action="../incio.html">
+                              <div class="mb-3">
+                                <input type="text" class="form-control" minlength="8" maxlength="45" autofocus required>
+                              </div>
+                              <div class="input-group mb-3">
+                                <input ID="txtPassword" type="Password" Class="form-control" placeholder="CONSTRASEÑA" minlength="8" maxlength="20" required>
+                                <div class="input-group-append">
+                                  <button id="show_password" class="btn btn-primary" type="button" onclick="mostrarPassword()"> <span class="fa fa-eye-slash icon"></span> </button>
+                                </div>
+                              </div>
+                              <div class="modal-footer text-center m-3">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-primary">Ingresar</button>
+                              </div>
+                            </form>
+                          </div>
+                      </div>
+                  </div>
+                </div>               
+                <!-- Modal ingresar con google -->
+                <a class="redesIngreso" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalCenter2"><i class="fa-brands fa-google-plus-square fa-2x ps-3"></i></a>
+                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Ingrese su cuenta de Google</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body my-2">
+                            <form class="mx-5" action="../incio.html">
+                              <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="e-mail@gmail.com" minlength="8" maxlength="45" autofocus required>
+                              </div>
+                              <div class="input-group mb-3">
+                                <input ID="txtPassword2" type="Password" Class="form-control" placeholder="CONSTRASEÑA" minlength="8" maxlength="20" required>
+                                <div class="input-group-append">
+                                  <button id="show_password" class="btn btn-primary" type="button" onclick="mostrarPassword2()"> <span class="fa fa-eye-slash icon"></span> </button>
+                                </div>
+                              </div>
+                              <div class="modal-footer text-center m-3">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-primary">Ingresar</button>
+                              </div>
+                            </form>
+                          </div>
+                      </div>
+                  </div>
+                </div> 
+              </div>
+
+              <!-- Formulario ingresar con tus datos -->
+              <form class="mx-5" action="../index.html">
+                <div class="mb-3">
+                  <input type="text" title="Ingresar nombre de usuario, correro electrónico o celular" class="form-control" placeholder="USUARIO" minlength="8" maxlength="45" autofocus required>
+                </div>
+                <div class="input-group mb-3">
+                  <input ID="txtPassword3" type="Password" Class="form-control" placeholder="CONSTRASEÑA" minlength="8" maxlength="20" required>
+                  <div class="input-group-append">
+                    <button id="show_password" class="btn btn-primary" type="button" onclick="mostrarPassword3()"> <span class="fa fa-eye-slash icon"></span> </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Mantener sesion activa</label>
+                  </div>
+                </div>
+                <div class="text-center m-3">
+                  <button type="submit" class="btn btn-primary">Ingresar</button>
+                </div>
+              </form>
+              <a href="#" class="text-decoration-none text-center" data-bs-toggle="modal" data-bs-target="#exampleModalCenter3">
+                <div>
+                  <b>Olvidé mi contraseña</b>
+                </div>
+              </a>
+
+              <!-- Modal olvidé mi contraseña -->
+              <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                            <h5>
+                              Recuperar contraseña
+                            </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                          <div class="modal-body my-2">
+                              <form action="../index.html">
+                                <label for="email"><strong>Correo electrónico</strong></label>
+                                  <input id="email" type="email" class="form-control mb-3 d-block" placeholder="juan_perez@gmail.com" minlength="8" maxlength="45" required>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                              <button type="submit" class="btn btn-primary">
+                                <b>Enviar</b>
+                              </button>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-xs-1 col-md-2 col-lg-3"></div>
+          </div>
+        </main>
+        <!-- Footer -->
+        <div class="footer container-fluid mt-3">
+          <div class="row pt-3 bg-dark">
+                <div class="col-xs-12 col-md-6 col-lg-3 text-center">
+                  <a href="../index.html"><img class="logofooter" src="../Assets/images/imagotipo.png" width="140"></a>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 px-3">
+                  <p><a class="a text-decoration-none text-secondary" href="../index.html">Quiénes somos</a></p>  
+                  <p><a class="a text-decoration-none text-secondary" href="../html/sucursales.html">Sucursales</a></p>  
+                  <p><a class="a text-decoration-none text-secondary" href="../html/asesoramiento.html">Asesoramiento</a></p>  
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 px-3 text-white">
+                  <p><a class="a text-decoration-none text-secondary" href="../html/terminos.html">Términos y condiciones</a></p>  
+                  <p><a class="a text-decoration-none text-secondary" href="../html/noticias.html">Noticias</a></p>  
+                  <p><a class="a text-decoration-none text-secondary" href="../html/cv.html">¿Querés trabajar en Prosacode?</a></p> 
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 px-3 text-white">
+                  <p class="text-secondary"><b>¡Contáctanos!</b></p>
+                  <a class="redes text-decoration-none text-secondary me-2" href="https://www.facebook.com/prosacode" target="_blank"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+                  <a class="redes text-decoration-none text-secondary me-2" href="https://instagram.com/prosacode" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                  <a class="redes text-decoration-none text-secondary me-2" href="mailto:prosacode@gmail.com" target="_blank"><i class="fa-solid fa-at fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="row bg-dark">
+              <div class="col-12 text-secondary text-center position-relative">
+                <p class="mx-5 px-5">Copyright 2022 &#169 PROSACODE - Diseño de página web de 
+                <span><a class="a text-decoration-none text-secondary" href="./desarrolladores.html">Bonobo group</a></span> 
+                </p>
+                <a class="up position-absolute px-3 text-decoration-none text-secondary" href="#"><i class="fa-solid fa-angles-up fa-lg"></i></a>
+              </div>
+              <div class="col-12 barra"></div>
+          </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+      </script>
+</body>
+</html>

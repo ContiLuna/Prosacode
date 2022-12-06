@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleAsesoramiento.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3d8e54b488.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../Assets/images/logo.png">
+    <title>Prosacode</title>
+</head>
+    <body>
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light h5">
+              <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html"><img src="../Assets/images/LogoAsesoramiento.png" width="200"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="col navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./sillas.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./donar.html">Donar</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./contactos.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./usuario.html"><i class="fa-solid fa-circle-user"></i></a>
+                        </li>
+                        <li class="dropdown">
+                          <a class="nav-link active dropdown-toggle" aria-current="page" href="#" data-bs-toggle="dropdown"></a>
+                          <ul class="dropdown-menu dropdown-menu-end px-2 bg-light" aria-labelledby="navbarDropdown">
+                            <li>
+                              <button class="dropdown-item" type="button">
+                                <a class="menu-link active text-decoration-none" href="./ingresar.html">Ingresar</a>
+                              </button>
+                            </li>
+                            <li><hr class="dropdown-divider text-light"></li>
+                            <li>
+                              <button class="dropdown-item" type="button">
+                                <a class="menu-link active text-decoration-none" href="./registrarse.html">Registrarse</a>
+                              </button>
+                            </li>
+                            <li><hr class="dropdown-divider text-light"></li>
+                            <li>
+                              <button class="dropdown-item" type="button">
+                                <a class="menu-link active text-decoration-none" href="./error.html">Cerrar sesion</a>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+          </nav>
+        </header>
+        <main>
+          <div class="row flex-row-reverse mx-3">
+            <div class="col-xs-12 col-md-8 col-lg-9 p-2">
+              <div class="row mx-2">
+                <!-- Formulario de consulta -->
+                <div class="col-12 mb-3">
+                  <div class="formulario row-12 px-5 mb-3 border">
+                    <h4 class="text-center p-4"><strong>ASESORAMIENTO</strong></h4>
+                    <form action="../index.html">
+                        <div class="row mx-2 d-flex justify-content-center">
+                        <label for="name"><strong>Nombres y Apellidos</strong></label>
+                            <input id="name" type="text" class="form-control mb-3 d-block" placeholder="Juan Perez" minlength="8" maxlength="60" autofocus required>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <p>¿Por que medio desea que lo contactemos?</p>
+                            <fieldset class="col-xs-12 col-md-3 col-lg-2 form-group row">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="gridRadios1">
+                                            Llamada
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                        <label class="form-check-label" for="gridRadios2">
+                                            SMS
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                            <label class="form-check-label" for="gridRadios3">
+                                            WhatsApp
+                                        </label>
+                                    </div>
+                            </fieldset>
+                            <div class="col-xs-12 col-md-9 col-lg-10">
+                                <label for="tel"><strong>Teléfono</strong></label>
+                                    <input id="tel" type="tel" class="form-control mb-3" minlength="8" maxlength="45" required>
+                            </div>
+                        </div>
+                        <div class="row mt-3 d-flex justify-content-center">
+                            <fieldset class="col-xs-12 col-md-3 col-lg-2 form-group row">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                                    <label class="form-check-label" for="gridRadios4">E-mail</label>
+                                </div>
+                            </fieldset>
+                            <div class="col-xs-12 col-md-11 col-lg-10">
+                                <label for="email"><strong>Correo electrónico</strong></label>
+                                    <input id="email" type="email" class="form-control mb-3" placeholder="juan_perez@gmail.com" minlength="8" maxlength="45" required>
+                            </div>
+                        </div>
+                        <label class="m-2"for="exampleFormControlTextarea1">Dejanos tu consulta y te contactaremos a la brevedad</label>
+                        <textarea class="form-control mx-2" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <div class="text-center m-4">
+                            <button type="submit" class="btn btn-primary">ENVIAR</button>
+                        </div>
+                    </form>
+                  </div>
+                </div>
+
+                <!-- Publicidades -->
+                <div class="col-12" >
+                  <div class="propaganda">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-intervale="100">
+                          <img src="../assets/images/odontolink01.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-intervale="100">
+                          <img src="../assets/images/odontolink02.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-intervale="100">
+                          <img src="../assets/images/odontolink03.jpg" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      </button>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Columna de asesores -->
+            <div class="col-xs-12 col-md-4 col-lg-3 p-2">
+              <div class="row d-flex justify-content-center">
+                <div class="col-xs-12 col-md-3 mb-3" style="width: 18rem;">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="../Assets/images/carlos.jpg" alt=""/>
+                      <div class="overlay">
+                        <h2>Carlos</h2>
+                        <a class="wsp" href="tel:5493814757398"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-3 mb-3" style="width: 18rem;">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="../Assets/images/exequiel.jpg" alt=""/>
+                      <div class="overlay">
+                        <h2>Exequiel</h2>
+                        <a class="wsp" href="tel:5493816257345"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-3 mb-3" style="width: 18rem;">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="../Assets/images/lucia.jpg" alt=""/>
+                      <div class="overlay">
+                        <h2>Lucía</h2>
+                        <a class="wsp" href="tel:5493813409928"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-3 mb-3" style="width: 18rem;">
+                  <div class="card">
+                    <div class="img-wrapper">
+                      <img src="../Assets/images/agustina.jpg" alt=""/>
+                      <div class="overlay">
+                        <h2>Agustina</h2>
+                        <a class="wsp" href="tel:5493816386995"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </main>
+        <!-- Footer -->
+        <div class="footer container-fluid mt-3">
+          <div class="row pt-3 bg-dark">
+                <div class="col-xs-12 col-md-6 col-lg-3 text-center">
+                  <a href="../index.html"><img class="logofooter" src="../Assets/images/imagotipo.png" width="140"></a>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 px-3">
+                  <p><a class="a text-decoration-none text-secondary" href="../index.html">Quiénes somos</a></p>  
+                  <p><a class="a text-decoration-none text-secondary" href="../html/sucursales.html">Sucursales</a></p>  
+                  <p><a class="a text-decoration-none text-secondary" href="#">Asesoramiento</a></p>  
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 px-3 text-white">
+                  <p><a class="a text-decoration-none text-secondary" href="../html/terminos.html">Términos y condiciones</a></p>  
+                  <p><a class="a text-decoration-none text-secondary" href="../html/noticias.html">Noticias</a></p>  
+                  <p><a class="a text-decoration-none text-secondary" href="../html/cv.html">¿Querés trabajar en Prosacode?</a></p> 
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 px-3 text-white">
+                  <p class="text-secondary"><b>¡Contáctanos!</b></p>
+                  <a class="redes text-decoration-none text-secondary me-2" href="https://www.facebook.com/prosacode" target="_blank"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+                  <a class="redes text-decoration-none text-secondary me-2" href="https://instagram.com/prosacode" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                  <a class="redes text-decoration-none text-secondary me-2" href="mailto:prosacode@gmail.com" target="_blank"><i class="fa-solid fa-at fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="row bg-dark">
+              <div class="col-12 text-secondary text-center position-relative">
+                <p class="mx-5 px-5">Copyright 2022 &#169 PROSACODE - Diseño de página web de 
+                <span><a class="a text-decoration-none text-secondary" href="./desarrolladores.html">Bonobo group</a></span> 
+                </p>
+                <a class="up position-absolute px-3 text-decoration-none text-secondary" href="#"><i class="fa-solid fa-angles-up fa-lg"></i></a>
+              </div>
+              <div class="col-12 barra"></div>
+          </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+      </script>
+</body>
+</html>
